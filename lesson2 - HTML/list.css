@@ -29,4 +29,10 @@ h1 {
     margin: auto;
     /* עיגול קצוות */
     border-radius: 5px;
+    /* ריווח פנימי */
+    padding: 12px;
+}
+
+ul {
+    list-style-type: square;
 }
