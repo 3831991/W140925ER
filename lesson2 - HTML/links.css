@@ -1,0 +1,28 @@
+body {
+    /* רקע לאתר */
+    background-color: #333;
+}
+
+a {
+    /* רקע */
+    background-color: blanchedalmond;
+    /* צבע טקסט */
+    color: black;
+    /* ריווח פנימי */
+    padding: 8px;
+    /* מצב תצוגה */
+    display: inline-block;
+    /* ביטול הקו התחתון */
+    text-decoration: none;
+}
+
+/* עיצוב שונה בריחוף עם העכבר */
+a:hover {
+    background-color: aqua;
+}
+
+/* עיצוב שונה בלחיצה עם העכבר */
+a:active {
+    /* גודל טקסט */
+    font-size: 26px;
+}
