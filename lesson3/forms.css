@@ -1,10 +1,13 @@
 body {
     /* רקע */
-    background-color: #304f2f;
+    background-color: #090d12;
     /* גופן */
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     /* כיוון האתר */
     direction: rtl;
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/9/91/Pizza-3007395.jpg');
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 h1 {
@@ -14,6 +17,17 @@ h1 {
     font-size: 36px;
     /* יישור טקסט */
     text-align: center;
+}
+
+h2 {
+    text-align: center;
+}
+
+h3 {
+    font-weight: normal;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 16px;
 }
 
 .frame {
@@ -33,16 +47,14 @@ h1 {
     padding: 12px;
 }
 
-ul {
-    list-style-type: square;
-}
-
 .field {
     /* ריווח פנימי */
     padding: 8px;
 }
 
-.field input {
+.field input,
+.field select,
+textarea {
     /* רוחב */
     width: 100%;
     /* ריווח פנימי */
@@ -66,4 +78,9 @@ button {
     color: white;
     border: 0;
     border-radius: 5px;
+    margin-top: 12px;
+}
+
+textarea {
+    min-height: 100px;
 }
