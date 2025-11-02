@@ -32,3 +32,18 @@ h1 {
     /* ריווח פנימי */
     padding: 12px;
 }
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    table-layout: fixed;
+}
+
+th, td {
+    border: 1px solid;
+    height: 40px;
+}
+
+td:hover {
+    background-color: #8be1e3;
+}
