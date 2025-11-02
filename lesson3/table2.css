@@ -1,0 +1,60 @@
+body {
+    /* רקע */
+    background-color: #8c5d24;
+    /* גופן */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    /* כיוון האתר */
+    direction: rtl;
+}
+
+h1 {
+    /* צבע טקסט */
+    color: white;
+    /* גודל טקסט */
+    font-size: 36px;
+    /* יישור טקסט */
+    text-align: center;
+}
+
+.frame {
+    /* רקע */
+    background-color: white;
+    /* רוחב */
+    width: 90%;
+    /* רוחב מקסימלי */
+    max-width: 900px;
+    /* גובה התחלתי */
+    min-height: 500px;
+    /* מרכוז אלמנט */
+    margin: auto;
+    /* עיגול קצוות */
+    border-radius: 5px;
+    /* ריווח פנימי */
+    padding: 12px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    table-layout: fixed;
+}
+
+th, td {
+    border: 1px solid;
+    height: 40px;
+    padding: 0 8px;
+    text-align: center;
+}
+
+td:hover {
+    background-color: #8be1e3;
+}
+
+tr>td:first-child, th {
+    background-color: #003366;
+    color: white;
+}
+
+td[rowspan] {
+    background-color: #d1a100;
+}
