@@ -57,3 +57,15 @@ h1 {
 .frame>div:nth-child(4) {
     box-shadow: inset 0 0 40px #000000, 0 0 4px 8px #000000;
 }
+
+.frame>div:nth-child(5) {
+    box-shadow: 0 0 0 6px black,
+    inset 0 0 0 6px #fff700,
+    inset 0 0 0 12px #001eff;
+    /* border: 6px solid #fff700; */
+    background-color: #ff0000;
+}
+
+.frame>div:nth-child(6) {
+    box-shadow: 7px 7px 0px 6px #2a2a2a inset;
+}
