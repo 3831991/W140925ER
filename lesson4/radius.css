@@ -32,3 +32,20 @@ h1 {
     /* ריווח פנימי */
     padding: 12px;
 }
+
+.frame>div {
+    width: 150px;
+    height: 150px;
+    margin: 16px;
+    display: inline-block;
+}
+
+.frame>div:first-child {
+    background-color: brown;
+    border-radius: 25px;
+}
+
+.frame>div:nth-child(2) {
+    background-color: blueviolet;
+    border-radius: 50%;
+}
