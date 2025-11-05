@@ -33,7 +33,7 @@ h1 {
     padding: 12px;
 }
 
-.frame>div {
+.frame>div:not(.text) {
     width: 200px;
     height: 200px;
     margin: 16px;
@@ -68,4 +68,37 @@ h1 {
 
 .frame>div:nth-child(6) {
     box-shadow: 7px 7px 0px 6px #2a2a2a inset;
+}
+
+p {
+    font-size: 36px;
+}
+
+p:first-child {
+    text-shadow: 4px 4px 0px silver;
+}
+
+p:nth-child(2) {
+    text-shadow: 2px 2px 5px #F44336;
+}
+
+p:nth-child(3) {
+    text-shadow: -2px -2px 4px #F44336, 2px -2px 4px #F44336, 2px 2px 4px #F44336, -2px 2px 4px #F44336;
+}
+
+p:nth-child(4) {
+    color: white;
+    font-weight: bold;
+    text-shadow: 0 0 6px black;
+}
+
+p:nth-child(5) {
+    color: white;
+    text-shadow: -1px -1px 0px black, 1px -1px 0px black, 1px 1px 0px black, -1px 1px 0px black;
+    font-weight: bold;
+}
+
+p:nth-child(6) {
+    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+    color: white;
 }
