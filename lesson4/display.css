@@ -1,0 +1,83 @@
+body {
+    /* רקע */
+    background-color: #b7d23c;
+    /* גופן */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    /* כיוון האתר */
+    direction: rtl;
+}
+
+h1 {
+    /* צבע טקסט */
+    color: white;
+    /* גודל טקסט */
+    font-size: 36px;
+    /* יישור טקסט */
+    text-align: center;
+}
+
+.frame {
+    /* רקע */
+    background-color: white;
+    /* רוחב */
+    width: 90%;
+    /* רוחב מקסימלי */
+    max-width: 900px;
+    /* גובה התחלתי */
+    min-height: 500px;
+    /* מרכוז אלמנט */
+    margin: auto;
+    /* עיגול קצוות */
+    border-radius: 5px;
+    /* ריווח פנימי */
+    padding: 12px;
+}
+
+.rectangle {
+    height: 50px;
+}
+
+.yellow {
+    background-color: #ffff00;
+}
+
+.green {
+    background-color: #008000;
+}
+
+.blue {
+    background-color: #0000ff;
+}
+
+.red {
+    background-color: #ff0000;
+}
+
+.purple {
+    background-color: #800080;
+}
+
+.frame div:nth-child(2) div:nth-child(3) {
+    width: 80%;
+}
+
+.frame div:nth-child(2) div:nth-child(4) {
+    width: 60%;
+}
+
+.frame div:nth-child(2) div:nth-child(5) {
+    width: 40%;
+}
+
+.frame div:nth-child(2) div:nth-child(6) {
+    width: 20%;
+}
+
+.frame div:nth-child(3) div {
+    width: 30%;
+}
+
+.frame div:nth-child(4) div {
+    width: 19%;
+    display: inline-block;
+}
