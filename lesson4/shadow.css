@@ -1,0 +1,59 @@
+body {
+    /* רקע */
+    background-color: #3a3a3a;
+    /* גופן */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    /* כיוון האתר */
+    direction: rtl;
+}
+
+h1 {
+    /* צבע טקסט */
+    color: white;
+    /* גודל טקסט */
+    font-size: 36px;
+    /* יישור טקסט */
+    text-align: center;
+}
+
+.frame {
+    /* רקע */
+    background-color: white;
+    /* רוחב */
+    width: 90%;
+    /* רוחב מקסימלי */
+    max-width: 900px;
+    /* גובה התחלתי */
+    min-height: 500px;
+    /* מרכוז אלמנט */
+    margin: auto;
+    /* עיגול קצוות */
+    border-radius: 5px;
+    /* ריווח פנימי */
+    padding: 12px;
+}
+
+.frame>div {
+    width: 200px;
+    height: 200px;
+    margin: 16px;
+    display: inline-block;
+    background-color: #dc8c14;
+    border-radius: 4px;
+}
+
+.frame>div:first-child {
+    box-shadow: 10px 10px 0 1px black;
+}
+
+.frame>div:nth-child(2) {
+    box-shadow: 0 0 10px 6px #00000091;
+}
+
+.frame>div:nth-child(3) {
+    box-shadow: inset 0 0 40px #000000;
+}
+
+.frame>div:nth-child(4) {
+    box-shadow: inset 0 0 40px #000000, 0 0 4px 8px #000000;
+}
