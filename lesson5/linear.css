@@ -49,3 +49,23 @@ h2 {
     border: 1px solid gray;
     max-width: 100%;
 }
+
+.bg1 {
+    background-color: #e91e63;
+}
+
+.bg2 {
+    background-image: linear-gradient(45deg, #287c5a, white);
+}
+
+.bg3 {
+    background-image: linear-gradient(90deg, red, orange, yellow, green, blue);
+}
+
+.bg4 {
+    background-image: radial-gradient(#000bff, #FFEB3B, red);
+}
+
+.bg5 {
+    
+}
