@@ -67,5 +67,8 @@ h2 {
 }
 
 .bg5 {
-    
+    background-image: url(images/web.png), radial-gradient(black, #1a4b2a, black);
+    background-size: 300px, cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
