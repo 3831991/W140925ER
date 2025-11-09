@@ -1,0 +1,91 @@
+body {
+    background-color: #d23c3c;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    direction: rtl;
+}
+
+h1 {
+    color: white;
+    font-size: 36px;
+    text-align: center;
+}
+
+.frame {
+    background-color: white;
+    width: 90%;
+    max-width: 900px;
+    min-height: 500px;
+    margin: auto;
+    border-radius: 5px;
+    padding: 12px;
+}
+
+h2 {
+    padding: 8px;
+    margin: 8px 0;
+    border-bottom: 1px solid #c5c5c5;
+    color: #4d4d4d;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background: #c9f2e5;
+}
+
+.fixed {
+    background-color: #483d8bbd;
+    color: white;
+    height: 200px;
+    width: 200px;
+    position: fixed;
+    top: 200px;
+    left: 0;
+    z-index: 2;
+    padding: 12px;
+    font-size: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 8px 18px;
+}
+
+
+.realtive {
+    width: 250px;
+    height: 132px;
+    background-color: chocolate;
+    position: relative;
+    right: 36px;
+}
+
+.absolute {
+    width: 400px;
+    height: 200px;
+    border: 1px solid;
+    position: relative;
+    margin: 8px;
+}
+
+.absolute div {
+    width: 50px;
+    height: 30px;
+    background-color: darkolivegreen;
+    position: absolute;
+}
+
+.absolute:nth-child(2) div {
+    margin: auto;
+    left: 0;
+    right: 0;
+}
+
+.absolute:nth-child(3) div {
+    left: 0;
+}
+
+.absolute:nth-child(4) div {
+    margin: auto;
+    top: 0;
+    bottom: 0;
+}
+
+.absolute:nth-child(5) div {
+    bottom: 0;
+}
