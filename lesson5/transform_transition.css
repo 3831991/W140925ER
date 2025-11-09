@@ -33,5 +33,69 @@ h2 {
 .myDiv {
     width: 300px;
     height: 180px;
-    transition: 0.6s;
+    transition: 2s;
+}
+
+.div1 {
+    background-color: #994d00;
+}
+
+.frame:hover .div1 {
+    rotate: 90deg;
+}
+
+.div2 {
+    background-color: #669900;
+}
+
+.frame:hover .div2 {
+    transform: rotate3d(1, 1, 1, 360deg);
+    background-color: #d23c3c;
+}
+
+.div3 {
+    background-color: #009999;
+}
+
+.frame:hover .div3 {
+    rotate: 360deg;
+}
+
+.div4 {
+    background-color: #1a0099;
+    transition: 0.3s;
+}
+
+.div4:hover {
+    scale: 1.2;
+}
+
+.circle {
+    width: 100px;
+    height: 100px;
+    background-color: #d23c3c;
+    color: white;
+    border-radius: 50%;
+    font-size: 50px;
+    cursor: pointer;
+
+    /* עוד לא למדנו */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+    border: 6px solid #d23c3c;
+
+}
+
+.circle:hover {
+    rotate: 360deg;
+    background-color: white;
+    color: #d23c3c;
+}
+
+.circle:active {
+    scale: 0.6;
+    background-color: #d23c3c;
+    color: white;
 }
