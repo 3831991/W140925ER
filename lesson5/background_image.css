@@ -66,3 +66,10 @@ h2 {
     background-repeat: no-repeat;
     background-position: center, top;
 }
+
+.image4 {
+    background-image: url(images/web.png), url(images/repeat_background.png);
+    background-size: 200px, 50px;
+    background-repeat: no-repeat, repeat;
+    background-position: center, top;
+}
