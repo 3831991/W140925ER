@@ -49,3 +49,20 @@ h2 {
     border: 1px solid gray;
     max-width: 100%;
 }
+
+.image1 {
+    background-image: url(images/repeat_background.png);
+    background-size: 50px;
+}
+
+.image2 {
+    background-image: url(images/project.jpeg);
+    background-size: cover;
+}
+
+.image3 {
+    background-image: url(images/web.png), url(images/project.jpeg);
+    background-size: 200px, cover;
+    background-repeat: no-repeat;
+    background-position: center, top;
+}
