@@ -46,7 +46,6 @@ h2 {
     box-shadow: 0 0 8px 18px;
 }
 
-
 .realtive {
     width: 250px;
     height: 132px;
@@ -61,6 +60,7 @@ h2 {
     border: 1px solid;
     position: relative;
     margin: 8px;
+    display: inline-block;
 }
 
 .absolute div {
