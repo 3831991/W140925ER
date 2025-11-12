@@ -21,3 +21,46 @@ h1 {
     padding: 8px 16px;
     border-radius: 6px;
 }
+
+.dropdown {
+    width: 200px;
+}
+
+.dropdown div {
+    background-color: beige;
+    max-height: 0;
+    overflow: hidden;
+    transition: 0.6s;
+}
+
+.dropdown:hover div {
+    max-height: 1000px;
+}
+
+.dropdown a {
+    display: block;
+    padding: 8px;
+    text-decoration: none;
+    border-bottom: 1px solid;
+    cursor: pointer;
+    text-align: center;
+}
+
+.dropdown a:hover {
+    background-color: #ffff84;
+}
+
+button {
+    width: 100%;
+    font-size: 18px;
+    padding: 8px;
+    background-color: #c2006f;
+    color: white;
+    border: 0;
+    border-radius: 5px;
+    margin-top: 12px;
+}
+
+button:hover {
+    background-color: #a0005b;
+}
