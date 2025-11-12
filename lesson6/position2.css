@@ -104,3 +104,35 @@ h2 {
     z-index: 1;
     position: relative;
 }
+
+.layerFrame {
+    position: relative;
+    width: 300px;
+    height: 300px;
+}
+
+.layerFrame div {
+    height: 150px;
+    width: 150px;
+    position: absolute;
+}
+
+.layerFrame div:nth-child(1) {
+    background-color: #3027b0;
+}
+
+.layerFrame div:nth-child(2) {
+    background-color: #b09727;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 1;
+}
+
+.layerFrame div:nth-child(3) {
+    background-color: #9C27B0;
+    bottom: 0;
+    left: 0;
+}
