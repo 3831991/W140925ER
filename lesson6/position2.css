@@ -56,6 +56,7 @@ h2 {
     display: inline-block;
     border: 2px solid #00c382;
     background-color: white;
+
 }
 
 #moveRight {
@@ -63,4 +64,43 @@ h2 {
     position: relative;
     top: 30px;
     left: 30px;
+}
+
+#moveLeft {
+    background-color: #00c382;
+    position: relative;
+    top: -30px;
+    left: -30px;
+    z-index: 1;
+}
+
+.bigDiv {
+    width: 600px;
+    height: 300px;
+    background-color: #c1c1c1;
+    margin: auto;
+    position: relative;
+}
+
+.bigDiv div {
+    width: 100px;
+    height: 60px;
+    position: absolute;
+}
+
+.bigDiv div:first-child {
+    background-color: blue;
+    top: 100px;
+    left: 40px;
+}
+
+.bigDiv div:last-child {
+    background-color: red;
+    top: 150px;
+    left: 350px;
+}
+
+#topLayer {
+    z-index: 1;
+    position: relative;
 }
