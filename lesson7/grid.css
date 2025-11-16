@@ -36,6 +36,7 @@ h2 {
     background-color: #017d90;
     border: 1px solid;
     padding: 3px 6px;
+    text-align: center;
 }
 
 .ex1 {
@@ -49,4 +50,17 @@ h2 {
 .ex3 {
     grid-template-columns: repeat(3, 1fr);
     gap: 10px;
+}
+
+.ex4 {
+    grid-template-columns: 50px 1fr 30px;
+}
+
+.ex5 {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.ex5 div:nth-child(4) {
+    background-color: coral;
+    grid-column: 1 / 3;
 }
