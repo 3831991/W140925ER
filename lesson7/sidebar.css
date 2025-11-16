@@ -29,11 +29,16 @@ h2 {
 }
 
 ul {
-    background-image: linear-gradient(45deg, #0082ff, transparent);
+    background-image: linear-gradient(
+45deg, #0082ff, white);
     width: 160px;
     margin: 0;
     list-style-type: none;
     padding: 0;
+}
+
+li {
+    position: relative;
 }
 
 a {
@@ -46,4 +51,15 @@ a {
 
 a:hover {
     background-color: #ffffff42;
+}
+
+ul ul {
+    position: absolute;
+    right: 100%;
+    top: 0;
+    display: none;
+}
+
+li:hover>ul {
+    display: block;
 }
