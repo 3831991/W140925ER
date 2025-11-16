@@ -35,16 +35,19 @@ h2 {
 .flex div {
     width: 200px;
     height: 180px;
+    background-color: #4d4d4d;
 }
 
 .flex div:first-child {
-  background-color: #0f7fbc;
+    background-color: #0f7fbc;
 }
+
 .flex div:nth-child(2) {
-  background-color: #0fbcb3;
+    background-color: #0fbcb3;
 }
+
 .flex div:last-child {
-  background-color: #0fbc37;
+    background-color: #0fbc37;
 }
 
 .ex2 {
@@ -53,4 +56,28 @@ h2 {
 
 .ex3 {
     justify-content: space-between;
+}
+
+.ex4 {
+    flex-wrap: wrap;
+}
+
+.ex4 div {
+    width: 400px;
+}
+
+.ex5 {
+    gap: 6px;
+    flex-wrap: wrap;
+}
+
+.ex5 div {
+    flex-grow: 1;
+}
+
+/* אפשר לתת לאלמנט במצב של wrap
+ע"מ לשבור שורה באופן יזום */
+.break-line {
+    flex-basis: 100%;
+    margin: 0;
 }
