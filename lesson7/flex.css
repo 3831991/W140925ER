@@ -75,6 +75,19 @@ h2 {
     flex-grow: 1;
 }
 
+.ex6 {
+    height: 400px;
+    background-color: white;
+}
+
+.ex6 div:nth-child(2) {
+    align-self: center;
+}
+
+.ex6 div:nth-child(3) {
+    align-self: end;
+}
+
 /* אפשר לתת לאלמנט במצב של wrap
 ע"מ לשבור שורה באופן יזום */
 .break-line {
