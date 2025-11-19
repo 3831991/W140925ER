@@ -29,21 +29,43 @@ h2 {
 }
 
 .Square {
-
+    height: 200px;
+    width: 200px;
+    background-color: chocolate;
 }
 
 .Circle {
-
+    height: 200px;
+    width: 200px;
+    background-color: darkorchid;
+    border-radius: 50%;
 }
 
 .Triangle {
-
+    width: 0;
+    height: 0;
+    border-left: 100px solid transparent;
+    border-right: 100px solid transparent;
+    border-bottom: 200px solid darkblue;
 }
 
 .Ellipse {
-
+    height: 100px;
+    width: 200px;
+    background-color: #32c7cc;
+    border-radius: 50%;
 }
 
 .Rectangle {
+    height: 100px;
+    width: 200px;
+    background-color: #32cc5e;
+}
 
+.MagenDavid {
+    width: 0;
+    height: 0;
+    border-left: 100px solid transparent;
+    border-right: 100px solid transparent;
+    border-bottom: 200px solid #0000ff;
 }
