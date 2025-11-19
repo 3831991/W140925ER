@@ -45,3 +45,54 @@ footer {
     padding: 20px;
     background-color: #073e59;
 }
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+li {
+    display: inline-block;
+    position: relative;
+}
+
+li ul {
+    display: none;
+}
+
+li:hover>ul {
+    display: block;
+}
+
+li>ul {
+    position: absolute;
+    background-color: #14a38b;
+    width: 150px;
+}
+
+li>ul li {
+    display: block;
+}
+
+li>ul ul {
+    top: 0;
+    right: 100%;
+    background: #31bca4;
+}
+
+li>ul li a {
+    display: flex;
+    justify-content: space-between;
+}
+
+.fa-sort-down {
+    position: relative;
+    top: -3px;
+    margin-right: 3px;
+}
+
+.fa-sort-down.left {
+    rotate: 90deg;
+    top: 0;
+}
