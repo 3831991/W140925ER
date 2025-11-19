@@ -46,52 +46,60 @@ footer {
     background-color: #073e59;
 }
 
+/* עיצוב כללי לכל הרשימות (תפריטים) */
 ul {
     margin: 0;
     padding: 0;
     list-style-type: none;
 }
 
+/* עיצוב לכל האייטימים
+הגדרנו להם Position
+בשביל התפריטים הנתפחים שיהיו ביחס אליהם */
 li {
     display: inline-block;
     position: relative;
 }
 
+/* עיצוב התפריטים הנפתחים והסתרה ראשונית */
 li ul {
     display: none;
-}
-
-li:hover>ul {
-    display: block;
-}
-
-li>ul {
     position: absolute;
     background-color: #14a38b;
     width: 150px;
 }
 
+/* כשעוברים על אייטם זה מציג את התפריט שלו (רק ילד) */
+li:hover>ul {
+    display: block;
+}
+
+/* עיצוב כל האייטמים שבתפריטים הנתפחים */
 li>ul li {
     display: block;
 }
 
+/* עיצוב התפריט הנפתח הפנימי */
 li>ul ul {
     top: 0;
     right: 100%;
     background: #31bca4;
 }
 
+/* עיצוב הקישרוים ע"מ שזה יוצג טוב במעבר עכבר */
 li>ul li a {
     display: flex;
     justify-content: space-between;
 }
 
+/* עיצוב האייקון (משולש לכיוון מטה) */
 .fa-sort-down {
     position: relative;
     top: -3px;
     margin-right: 3px;
 }
 
+/* הפיכת המשולש לצד שמאל */
 .fa-sort-down.left {
     rotate: 90deg;
     top: 0;
