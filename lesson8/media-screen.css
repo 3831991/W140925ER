@@ -27,3 +27,54 @@ h2 {
     border-bottom: 1px solid #c5c5c5;
     color: #4d4d4d;
 }
+
+.row {
+    display: flex;
+}
+
+.third {
+    flex-grow: 1;
+    height: 200px;
+}
+
+.third:first-child {
+    background-color: chocolate;
+}
+
+.third:nth-child(2) {
+    background-color: chartreuse;
+    flex-grow: 2;
+}
+
+.third:last-child {
+    background-color: aqua;
+}
+
+@media (max-width: 920px) {
+    body {
+        background-color: #a600ff;
+    }
+
+    .row {
+        flex-wrap: wrap;
+    }
+
+    .third {
+        min-width: 250px;
+    }
+}
+
+@media (max-width: 640px) {
+    body {
+        background-color: black;
+    }
+
+    .frame {
+        background: none;
+        width: initial;
+    }
+
+    .row {
+        display: block;
+    }
+}
