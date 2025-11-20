@@ -85,7 +85,8 @@ h2 {
 }
 
 .MagenDavid {
-    padding: 100px 0;
+    padding: 120px 30px 75px 150px;
+    display: inline-block;
 }
 
 .MagenDavid div {
@@ -114,5 +115,5 @@ h2 {
     transform: translate(50%, 13px);
     border-left: 24px solid transparent;
     border-right: 25px solid transparent;
-    border-bottom: 41px solid #d3d3d3;
+    border-bottom: 41px solid #ffffff;
 }
