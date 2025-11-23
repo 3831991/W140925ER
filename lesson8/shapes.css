@@ -16,7 +16,7 @@ h1 {
     width: 80%;
     max-width: 900px;
     min-height: 300px;
-    background-color: #ffffffc9;
+    background-color: white;
     margin: auto;
     padding: 8px 16px;
     border-radius: 6px;
@@ -81,13 +81,12 @@ h2 {
     transform: translate(50%, 13px);
     border-left: 90px solid transparent;
     border-right: 90px solid transparent;
-    border-bottom: 180px solid #d3d3d3;
+    border-bottom: 180px solid white;
 }
 
 .MagenDavid {
     padding: 120px 30px 75px 150px;
     display: inline-block;
-    background-color: white;
 }
 
 .MagenDavid div {
