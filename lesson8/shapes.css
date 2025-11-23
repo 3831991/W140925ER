@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     direction: rtl;
     font-family: "Secular One", sans-serif;
