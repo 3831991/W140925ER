@@ -1,3 +1,19 @@
 body {
     direction: rtl;
 }
+
+main>.card {
+    width: 320px;
+}
+
+main>.card img {
+    width: 100%;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    padding: 30px 16px;
+    justify-content: center;
+}
