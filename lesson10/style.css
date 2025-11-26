@@ -50,6 +50,7 @@ nav a:hover {
 #list>div {
     display: flex;
     justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 
 #list li {
@@ -58,4 +59,18 @@ nav a:hover {
 
 ol:last-child {
     list-style-type: hebrew;
+}
+
+#priority>div {
+    display: flex;
+    padding: 0 16px;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+#priority>div div {
+    width: 150px;
+    height: 150px;
+    border-radius: 5px;
+    background-color: darkcyan;
 }
