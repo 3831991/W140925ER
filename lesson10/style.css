@@ -68,6 +68,10 @@ ol:last-child {
     flex-wrap: wrap;
 }
 
+#priority>div div#item4 {
+    background-color: #8b8400;
+}
+
 #priority>div div {
     width: 150px;
     height: 150px;
