@@ -1,3 +1,9 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     direction: rtl;
     background-color: azure;
@@ -77,4 +83,38 @@ ol:last-child {
     height: 150px;
     border-radius: 5px;
     background-color: darkcyan;
+}
+
+#priority>div div:last-child {
+    background-image: url(./IMG_20181112_140242.jpg);
+    background-size: cover;
+}
+
+#priority>div div:last-child:hover {
+    background-position: top;
+    scale: 1.1;
+}
+
+#articles>div {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    padding: 0 16px;
+}
+
+article {
+    flex: 1;
+    min-width: 300px;
+}
+
+article img {
+    width: 100%;
+    transition: 0.3s;
+}
+
+article img:hover {
+    width: 100%;
+    filter: brightness(1.2);
+    scale: 1.05;
+    border-radius: 80px;
 }
