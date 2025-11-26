@@ -3,7 +3,7 @@ body {
     background-color: azure;
 }
 
-header {
+header.site-header {
     box-shadow: 0 0 4px #adadad;
     background: #9edcdc;
     padding: 4px 16px;
@@ -14,6 +14,13 @@ header {
 
 h1 {
     margin: 0;
+}
+
+h2 {
+    border-bottom: 1px solid #a7a7a7;
+    margin: 16px;
+    padding-bottom: 8px;
+    color: orange;
 }
 
 .logo::after {
@@ -29,13 +36,26 @@ nav ul {
     background-image: linear-gradient(-78deg, #69b3b3, #9addd7);
 }
 
-ul li a {
+nav a {
     text-decoration: none;
     padding: 6px 10px;
     color: white;
     display: inline-block;
 }
 
-ul li a:hover {
+nav a:hover {
     background-color: #55a8a8;
+}
+
+#list>div {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#list li {
+    font-size: 22px;
+}
+
+ol:last-child {
+    list-style-type: hebrew;
 }
