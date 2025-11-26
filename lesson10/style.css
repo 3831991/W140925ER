@@ -21,3 +21,21 @@ h1 {
     font-size: 50px;
 }
 
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    margin: 0;
+    background-image: linear-gradient(-78deg, #69b3b3, #9addd7);
+}
+
+ul li a {
+    text-decoration: none;
+    padding: 6px 10px;
+    color: white;
+    display: inline-block;
+}
+
+ul li a:hover {
+    background-color: #55a8a8;
+}
