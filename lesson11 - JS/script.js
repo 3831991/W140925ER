@@ -9,5 +9,7 @@ function welcome2() {
 }
 
 function multi50() {
-    
+    let num = document.getElementById("num1").value;
+
+    alert(num * 50);
 }
