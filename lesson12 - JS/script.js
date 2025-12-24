@@ -29,3 +29,13 @@ function task4() {
         document.getElementById("output2").innerHTML = "❌ לא נכון";
     }
 }
+
+function task5() {
+    document.getElementById("img1").style.display = "none";
+    document.getElementById("img2").style.display = "block";
+}
+
+function task5_b() {
+    document.getElementById("img1").style.display = "block";
+    document.getElementById("img2").style.display = "none";
+}
