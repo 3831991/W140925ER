@@ -19,3 +19,13 @@ function task3() {
         document.getElementById("output").innerHTML = "לא נכון";
     }
 }
+
+function task4() {
+    const city = document.getElementById("city").value;
+
+    if (city == "קרית ארבע") {
+        document.getElementById("output2").innerHTML = "✔️ נכון";
+    } else {
+        document.getElementById("output2").innerHTML = "❌ לא נכון";
+    }
+}

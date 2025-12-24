@@ -25,11 +25,28 @@
 
         <div class="task">
             <h2>יש לשאול שאלה ואם התשובה נכונה, לכתוב "נכון". אם התשובה לא נכונה, לכתוב "לא נכון".</h2>
-            
+
             <p><b>באיזה צבע בננה?</b></p>
             <input type="text" id="answer">
             <button onclick="task3()">אישור</button>
             <span id="output"></span>
+        </div>
+
+        <div class="task">
+            <h2>איזה עיר הכי טובה בישראל?</h2>
+
+            <select id="city" onchange="task4()">
+                <option></option>
+                <option>מודיעין</option>
+                <option>חיפה</option>
+                <option>ירושלים</option>
+                <option>תל אביב</option>
+                <option>נתניה</option>
+                <option>קרית ארבע</option>
+                <option>ראש העין</option>
+            </select>
+
+            <span id="output2"></span>
         </div>
     </div>
 </body>
