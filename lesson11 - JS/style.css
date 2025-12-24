@@ -60,3 +60,7 @@ input, select {
 img {
     width: 100%;
 }
+
+input[type=color] {
+    padding: 0;
+}

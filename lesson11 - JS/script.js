@@ -20,3 +20,15 @@ function multi() {
 
     alert(n1 * n2);
 }
+
+function plus() {
+    let n1 = +document.getElementById("num4").value;
+    let n2 = +document.getElementById("num5").value;
+
+    alert(n1 + n2);
+}
+
+function changeColor() {
+    let bg = document.getElementById("color").value;
+    document.body.style.backgroundColor = bg;
+}
