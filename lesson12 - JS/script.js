@@ -39,3 +39,25 @@ function task5_b() {
     document.getElementById("img1").style.display = "block";
     document.getElementById("img2").style.display = "none";
 }
+
+function sum() {
+    const n1 = +document.getElementById("num1").value;
+    const n2 = +document.getElementById("num2").value;
+    
+    // const result = n1 + " + " + n2 + " = " + (n1 + n2);
+    const result = `${n1} + ${n2} = ${n1 + n2}`;
+
+    document.getElementById("output3").innerHTML = result;
+}
+
+function task6() {
+    const n1 = +document.getElementById("num3").value;
+    const n2 = +document.getElementById("num4").value;
+    const op = document.getElementById("op").value;
+
+    if (op == '+') {
+        
+    } else if (op == '-') {
+
+    }
+}
