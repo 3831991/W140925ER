@@ -54,10 +54,19 @@ function task6() {
     const n1 = +document.getElementById("num3").value;
     const n2 = +document.getElementById("num4").value;
     const op = document.getElementById("op").value;
+    let result = '';
 
     if (op == '+') {
-        
+        result = n1 + n2;
     } else if (op == '-') {
-
+        result = n1 - n2;
+    } else if (op == 'x') {
+        result = n1 * n2;
+    } else if (op == ':') {
+        result = n1 / n2;
+    } else if (op == '^') {
+        result = n1 ** n2;
     }
+
+    document.getElementById("output4").innerText = `${n1} ${op} ${n2} = ${result}`;
 }
