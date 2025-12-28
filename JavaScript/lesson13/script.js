@@ -32,3 +32,31 @@ function task2() {
         input.style.backgroundColor = "green";
     }
 }
+
+function task3() {
+    // מסלול 1
+    // const str1 = document.querySelector("#str1").value;
+    // const str2 = document.querySelector("#str2").value;
+
+    // document.querySelector("#str1").value = str2;
+    // document.querySelector("#str2").value = str1;
+
+    // מסלול 2
+    const input1 = document.querySelector("#str1");
+    const input2 = document.querySelector("#str2");
+
+    const stam1 = input1.value;
+    const stam2 = input2.value;
+
+    input1.value = stam2;
+    input2.value = stam1;
+
+    // מסלול 3
+    // const input1 = document.querySelector("#str1");
+    // const input2 = document.querySelector("#str2");
+
+    // const stam1 = input1.value;
+
+    // input1.value = input2.value;
+    // input2.value = stam1;
+}
