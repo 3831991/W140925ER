@@ -5,9 +5,13 @@ function task1() {
 
     if (n % 2) {
         output.innerText = "אי זוגי";
-        output.style.color = "red";
+        output.className = "odd";
     } else {
         output.innerText = "זוגי";
-        output.style.color = "blue";
+        output.className = "even";
     }
+}
+
+function task2() {
+    
 }

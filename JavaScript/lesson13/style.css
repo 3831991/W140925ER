@@ -69,3 +69,16 @@ input[type=color] {
     direction: ltr;
     text-align: right;
 }
+
+.odd {
+    color: red;
+    font-weight: bold;
+    font-size: 30px;
+    margin-right: 6px;
+}
+
+.even {
+    color: blue;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 60px;
+}
