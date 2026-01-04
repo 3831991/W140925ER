@@ -30,3 +30,7 @@ const students = [
 function showStudents() {
     document.querySelector("#output1").innerText = students.join(", ");
 }
+
+function separateLineFn() {
+
+}
