@@ -74,7 +74,7 @@ function saleryCalcultor() {
     document.querySelector("#output1").innerHTML = `השכר המעודכן של ${user} הוא: <b>${Math.round(result)}</b>.`;
 }
 
-function isPlayerSelected() {
+function checkPlayerSelected() {
     const age = +document.querySelector("#age").value;
     const height = +document.querySelector("#height").value;
     const output = document.querySelector("#output2");
