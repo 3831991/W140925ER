@@ -33,4 +33,5 @@ function showStudents() {
 
 function separateLineFn() {
     document.querySelector("#output2").innerHTML = students.join("<br>");
+    // document.querySelector("#output2").innerText = '<p>' + students.join("</p><p>") + '</p>';
 }
