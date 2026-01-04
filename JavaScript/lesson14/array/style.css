@@ -88,3 +88,15 @@ input[type=color] {
 #task2 input {
     color: white;
 }
+
+.alert {
+    padding: 8px 12px;
+    margin: 0 -16px;
+    text-align: center;
+    border: 1px dashed;
+    border-right: 0;
+    border-left: 0;
+    font-size: 20px;
+    color: gray;
+    margin-bottom: 12px;
+}

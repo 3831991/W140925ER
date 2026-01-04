@@ -26,3 +26,7 @@ const students = [
     "שולי אחלאם",
     "שלמה אינגבר דניאל",
 ];
+
+function showStudents() {
+    document.querySelector("#output1").innerText = students.join(", ");
+}
