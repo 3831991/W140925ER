@@ -60,3 +60,38 @@ function task3() {
     // input1.value = input2.value;
     // input2.value = stam1;
 }
+
+function saleryCalcultor() {
+    const user = document.querySelector("#user").value;
+    const salery = +document.querySelector("#salery").value;
+    
+    let result = salery * 1.1;
+    
+    if (result >= 6000) {
+        result = salery * 1.05;
+    }
+    
+    document.querySelector("#output1").innerHTML = `השכר המעודכן של ${user} הוא: <b>${Math.round(result)}</b>.`;
+}
+
+function isPlayerSelected() {
+    const age = +document.querySelector("#age").value;
+    const height = +document.querySelector("#height").value;
+    const output = document.querySelector("#output2");
+
+    // if ((age >= 14 && age <= 18 || age >= 21 && age <= 26) && height >= 182) {
+    //     output.innerText = "התקבל";
+    // } else {
+    //     output.innerText = "לא התקבל";
+    // }
+
+    const isHeight = height >= 182;
+    const isRange1 = age >= 14 && age <= 18;
+    const isRange2 = age >= 21 && age <= 26;
+
+    if ((isRange1 || isRange2) && isHeight) {
+        output.innerText = "התקבל";
+    } else {
+        output.innerText = "לא התקבל";
+    }
+}
