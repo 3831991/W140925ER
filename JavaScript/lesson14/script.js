@@ -9,7 +9,7 @@ function calcVat(num) {
 }
 
 // פונקציה המקבלת שם פרטי ומשפחה, מחברת ביניהם ומחזירה
-function sum(fisrtName, lastName) {
+function fullName(fisrtName, lastName) {
     return `${fisrtName} ${lastName}`;
 }
 
