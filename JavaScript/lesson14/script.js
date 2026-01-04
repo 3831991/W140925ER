@@ -14,3 +14,12 @@ function sum(fisrtName, lastName) {
 }
 
 // פונקציה המקבלת 4 מספרים ומחזירה את הממוצע שלהם
+function avg(n1, n2, n3, n4) {
+    return (n1 + n2 + n3 + n4) / 4;
+}
+
+function inputChange(elem) {
+    elem.style.fontSize = elem.value + 'px';
+    elem.style.backgroundColor = `hsl(${elem.value}deg 67.41% 39.01%)`;
+    elem.style.color = 'white';
+}

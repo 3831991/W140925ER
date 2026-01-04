@@ -55,6 +55,8 @@ input, select {
     padding: 8px 12px;
     border-radius: 5px;
     margin-top: 3px;
+    max-width: 100%;
+    box-sizing: border-box;
 }
 
 img {
