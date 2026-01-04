@@ -51,3 +51,9 @@ function showIndexByStudent(elem) {
 
     document.querySelector("#output5").innerText = students.indexOf(name);
 }
+
+function randomStudent() {
+    const i = Math.floor(Math.random() * students.length);
+
+    document.querySelector("#output6").innerText = students[i];
+}
