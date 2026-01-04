@@ -40,6 +40,14 @@ function showStudentsInList() {
     document.querySelector("#output3").innerHTML = '<li>' + students.join("</li><li>") + '</li>';
 }
 
-function showStudentByIndex() {
-    
+function showStudentByIndex(elem) {
+    const i = +elem.value;
+
+    document.querySelector("#output4").innerText = students[i] || "לא נמצא";
+}
+
+function showIndexByStudent(elem) {
+    const name = elem.value;
+
+    document.querySelector("#output5").innerText = students.indexOf(name);
 }

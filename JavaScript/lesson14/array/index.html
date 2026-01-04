@@ -35,13 +35,13 @@
 
         <div class="task">
             <h2>יש לאפשר לבחור איזה מספר איבר להציג מהמערך</h2>
-            <input type="number" id="index" oninput="showStudentByIndex()">
+            <input type="number" oninput="showStudentByIndex(this)">
             <span id="output4"></span>
         </div>
 
         <div class="task">
             <h2>יש לאפשר לכתוב שם של סטודנט ואז יופיע האינדקס שלו מהמערך</h2>
-            <input type="number" id="name" oninput="showIndexByStudent()">
+            <input type="text" oninput="showIndexByStudent(this)">
             <span id="output5"></span>
         </div>
     </div>
