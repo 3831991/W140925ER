@@ -59,36 +59,6 @@ input, select {
     box-sizing: border-box;
 }
 
-img {
-    width: 100%;
-}
-
-input[type=color] {
-    padding: 0;
-}
-
-#output3, #output4 {
-    direction: ltr;
-    text-align: right;
-}
-
-.odd {
-    color: red;
-    font-weight: bold;
-    font-size: 30px;
-    margin-right: 6px;
-}
-
-.even {
-    color: blue;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 60px;
-}
-
-#task2 input {
-    color: white;
-}
-
 .alert {
     padding: 8px 12px;
     margin: 0 -16px;
