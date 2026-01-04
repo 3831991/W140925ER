@@ -39,3 +39,7 @@ function separateLineFn() {
 function showStudentsInList() {
     document.querySelector("#output3").innerHTML = '<li>' + students.join("</li><li>") + '</li>';
 }
+
+function showStudentByIndex() {
+    
+}
