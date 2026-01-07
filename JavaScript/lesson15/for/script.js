@@ -4,10 +4,18 @@ function sum() {
     let res = 0;
 
     for (let i = 0; i < grades.length; i++) {
-
+        res += grades[i];
     }
+
+    document.querySelector("#output1").innerText = res;
 }
 
 function avg() {
+    let res = 0;
 
+    for (let i = 0; i < grades.length; i++) {
+        res += grades[i];
+    }
+
+    document.querySelector("#output2").innerText = (res / grades.length).toFixed(2);
 }
