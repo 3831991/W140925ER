@@ -11,3 +11,15 @@ function sum() {
 
     document.querySelector("#output1").innerHTML = res;
 }
+
+function avg() {
+    let i = 0;
+    let res = 0;
+
+    while (i < grades.length) {
+        res += grades[i];
+        i++;
+    }
+
+    document.querySelector("#output2").innerHTML = (res / grades.length).toFixed(2);
+}
