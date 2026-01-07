@@ -33,3 +33,15 @@ function showRange() {
 
     document.querySelector("#output3").innerHTML = numbers.join(", ");
 }
+
+function showSizeNumber() {
+    let i = 1;
+    const numbers = [];
+
+    while (i <= 100) {
+        numbers.push(`<span style="font-size: ${i + 10}px; color: hsl(${i}deg 51.87% 47.25%)">${i}, </span>`);
+        i++;
+    }
+
+    document.querySelector("#output4").innerHTML = numbers.join("");
+}
