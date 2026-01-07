@@ -67,3 +67,7 @@ function showSpecialAsterisks10() {
 function colors() {
     
 }
+
+function multiBoard() {
+
+}
