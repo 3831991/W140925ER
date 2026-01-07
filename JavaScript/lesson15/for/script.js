@@ -49,5 +49,21 @@ function showSpecialAsterisks() {
 }
 
 function showSpecialAsterisks10() {
+    const arr = [];
+
+    for (let y = 1; y <= 10; y++) {
+        let asterisks = '';
+
+        for (let x = 0; x < 10; x++) {
+            asterisks += "*";
+        }
+
+        arr.push(asterisks);
+    }
+
+    document.querySelector("#output4").innerHTML = arr.join('<br>');
+}
+
+function colors() {
     
 }
