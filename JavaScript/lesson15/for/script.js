@@ -19,3 +19,31 @@ function avg() {
 
     document.querySelector("#output2").innerText = (res / grades.length).toFixed(2);
 }
+
+// function showSpecialAsterisks() {
+//     document.querySelector("#output3").innerHTML = "";
+
+//     for (let y = 1; y <= 10; y++) {
+//         for (let x = 0; x < y; x++) {
+//             document.querySelector("#output3").innerHTML += "*";
+//         }
+
+//         document.querySelector("#output3").innerHTML += "<br>";
+//     }
+// }
+
+function showSpecialAsterisks() {
+    const arr = [];
+
+    for (let y = 1; y <= 10; y++) {
+        let asterisks = '';
+
+        for (let x = 0; x < y; x++) {
+            asterisks += "*";
+        }
+
+        arr.push(asterisks);
+    }
+
+    document.querySelector("#output3").innerHTML = arr.join('<br>');
+}
