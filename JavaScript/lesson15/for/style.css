@@ -70,3 +70,11 @@ input, select {
     color: gray;
     margin-bottom: 12px;
 }
+
+.rectangle {
+    height: 30px;
+    width: 60px;
+    display: inline-block;
+    margin: 3px;
+    background-color: #484848;
+}

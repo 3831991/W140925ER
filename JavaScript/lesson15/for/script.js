@@ -65,7 +65,14 @@ function showSpecialAsterisks10() {
 }
 
 function colors() {
-    
+    const output = document.querySelector("#output5");
+
+    for (let i = 0; i < 30; i++) {
+        const div = document.createElement("div");
+        div.className = "rectangle";
+        div.style.backgroundColor = `hsl(${i * 50}deg 97% 40%)`;
+        output.appendChild(div);
+    }
 }
 
 function multiBoard() {
