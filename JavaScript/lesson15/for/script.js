@@ -47,3 +47,7 @@ function showSpecialAsterisks() {
 
     document.querySelector("#output3").innerHTML = arr.join('<br>');
 }
+
+function showSpecialAsterisks10() {
+    
+}
