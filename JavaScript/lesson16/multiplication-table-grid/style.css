@@ -24,81 +24,42 @@ h1 {
     margin: auto;
     padding: 8px 16px;
     border-radius: 6px;
-}
-
-.task {
-    border-bottom: 1px solid #c1c1c1;
-    padding-bottom: 12px;
-}
-
-h2 {
-    font-size: 18px;
-    font-weight: normal;
-    padding: 12px 0;
-    margin: 0px;
-}
-
-button {
-    background-color: #673ab7;
-    color: white;
-    padding: 8px 12px;
-    border-radius: 6px;
-    border: none;
-}
-
-button:hover {
-    background-color: #8056c9;
-}
-
-input, select {
-    border: 1px solid;
-    padding: 8px 12px;
-    border-radius: 5px;
-    margin-top: 3px;
-    max-width: 100%;
-    box-sizing: border-box;
-}
-
-table {
-    border-collapse: collapse;
-    margin: 30px auto;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
     direction: ltr;
 }
 
-td {
-    height: 50px;
-    width: 50px;
-    border: 1px solid;
+.frame>div {
     text-align: center;
-    font-size: 25px;
+    border: 1px solid;
+    padding: 20px;
     position: relative;
 }
 
-tr:first-child td,
-td:first-child {
-    background-color: chartreuse;
+.frame>div:hover {
+    background-color: #8bc34a;
 }
 
-td::after {
+.frame>div:hover::after {
     content: attr(operation);
-    position: absolute;
-    display: none;
-    width: 180px;
-    background: #009688;
-    padding: 8px;
-    z-index: 2;
-    border-radius: 0;
-    color: white;
-    left: 100%;
-    bottom: 100%;
-    border: 3px solid black;
-}
-
-td:hover {
-    background: #009688 !important;
-    color: white;
-}
-
-td:hover::after {
     display: block;
+    position: absolute;
+    padding: 8px;
+    width: 150px;
+    left: 100%;
+    z-index: 2;
+    top: 0;
+    margin: auto;
+    border-radius: 4px;
+    box-shadow: 0 0 3px #3d3d3d;
+    background-image: linear-gradient(45deg, #8bc34a, white);
+    font-size: 24px;
+}
+
+/* עיצוב של 10 הראשונים */
+.frame>div:nth-child(-n + 10),
+/* עיצוב בדילוגים של 10 - החלנו מ-1 קדימה */
+.frame>div:nth-child(10n + 1) {
+    font-weight: bold;
+    background-color: #f1ce3f;
 }

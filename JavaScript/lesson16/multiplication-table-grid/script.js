@@ -1,18 +1,10 @@
-function createTable() {
-    const table = document.querySelector("table");
+const frame = document.querySelector(".frame");
 
-    for (let y = 1; y <= 10; y++) {
-        const tr = document.createElement("tr");
-
-        for (let x = 1; x <= 10; x++) {
-            const td = document.createElement("td");
-            td.innerText = x * y;
-            td.setAttribute("operation", `${y} x ${x} = ${y * x}`)
-            tr.appendChild(td);
-        }
-
-        table.appendChild(tr);
+for (let y = 1; y <= 10; y++) {
+    for (let x = 1; x <= 10; x++) {
+        const div = document.createElement("div");
+        div.innerText = x * y;
+        div.setAttribute("operation", `${y} x ${x} = ${y * x}`)
+        frame.appendChild(div);
     }
 }
-
-createTable();
