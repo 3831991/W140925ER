@@ -68,4 +68,6 @@ td {
     height: 50px;
     width: 50px;
     border: 1px solid;
+    text-align: center;
+    font-size: 25px;
 }

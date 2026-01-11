@@ -6,6 +6,7 @@ function createTable() {
 
         for (let x = 0; x < 10; x++) {
             const td = document.createElement("td");
+            td.innerText = 5;
             tr.appendChild(td);
         }
 
