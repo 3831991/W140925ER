@@ -40,4 +40,25 @@ function task3() {
 //     document.querySelector(".output3").innerHTML = arr.join("");
 // }
 
-const chars = ["א","ב","ג","ד","ה","ו","ז","ח","ט","י","כ","ל","מ","נ","ס","ע","פ","צ","ק","ר","ש","ת","ך","ם","ן","ף","ץ"];
+const chars = ["א","ב","ג","ד","ה","ו","ז","ח","ט","י","כ","ל","מ","נ","ס","ע","פ","צ","ק","ר","ש","ת"];
+
+function task4() {
+    const wordAmount = 40;
+    const minWordLength = 2;
+    const maxWordLength = 10;
+    const words = [];
+
+    for (let i = 0; i < wordAmount; i++) {
+        const length = random(minWordLength, maxWordLength);
+        let word = '';
+
+        for (let x = 0; x < length; x++) {
+            const rand = random(0, chars.length - 1);
+            word += chars[rand];
+        }
+
+        words.push(word);
+    }
+
+    document.querySelector(".output4").innerHTML = words.join(" ");
+}
