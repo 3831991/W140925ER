@@ -62,6 +62,7 @@ input, select {
 table {
     border-collapse: collapse;
     margin: 30px auto;
+    direction: ltr;
 }
 
 td {
@@ -70,4 +71,34 @@ td {
     border: 1px solid;
     text-align: center;
     font-size: 25px;
+    position: relative;
+}
+
+tr:first-child td,
+td:first-child {
+    background-color: chartreuse;
+}
+
+td::after {
+    content: attr(operation);
+    position: absolute;
+    display: none;
+    width: 180px;
+    background: #009688;
+    padding: 8px;
+    z-index: 2;
+    border-radius: 0;
+    color: white;
+    left: 100%;
+    bottom: 100%;
+    border: 3px solid black;
+}
+
+td:hover {
+    background: #009688 !important;
+    color: white;
+}
+
+td:hover::after {
+    display: block;
 }
