@@ -36,7 +36,7 @@ function showStudents(word) {
     for (const s of students) {
         if (!word || s.includes(word)) {
             const li = document.createElement("li");
-            li.innerHTML = s;
+            li.innerHTML = s.replaceAll(word, `<mark>${word}</mark>`);
             ul.appendChild(li);
         }
     }
