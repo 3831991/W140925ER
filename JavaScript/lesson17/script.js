@@ -38,6 +38,28 @@ task2.querySelector("input").addEventListener("keyup", function(ev) {
     }
 });
 
+task3.querySelector("input").addEventListener("keyup", function(ev) {
+    const num = +task3.querySelector("input").value;
+    const output = task3.querySelector("p");
+
+    if (ev.key == 'Enter') {
+        const numbers = [];
+        let res = 1;
+
+        for (let i = 1; i <= num; i++) {
+            numbers.push(i);
+            res *= i;
+        }
+
+        output.innerHTML = `${numbers.join(' x ')} = <b>${res}</b>`;
+    } else {
+        output.innerHTML = "";
+    }
+
+    output.style.direction = 'ltr';
+    output.style.textAlign = 'right';
+});
+
 function isPrime(num) {
     for (let i = 2; i < num; i++) {
         if (num % i === 0) {
