@@ -1,4 +1,6 @@
 const task1 = document.querySelector(".task1");
+const task2 = document.querySelector(".task2");
+const task3 = document.querySelector(".task3");
 
 task1.querySelector("input").addEventListener("keyup", function(ev) {
     const num = +task1.querySelector("input").value;
@@ -12,6 +14,25 @@ task1.querySelector("input").addEventListener("keyup", function(ev) {
             output.innerHTML = "פריק";
             output.style.color = "purple";
         }
+    } else {
+        output.innerHTML = "";
+    }
+});
+
+task2.querySelector("input").addEventListener("keyup", function(ev) {
+    const num = +task2.querySelector("input").value;
+    const output = task2.querySelector("p");
+
+    if (ev.key == 'Enter') {
+        const numbers = [];
+
+        for (let i = 1; i <= num; i++) {
+            if (num % i === 0) {
+                numbers.push(i);
+            }
+        }
+
+        output.innerHTML = numbers.join(', ');
     } else {
         output.innerHTML = "";
     }
