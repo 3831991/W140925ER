@@ -1,13 +1,22 @@
 const redElem = document.querySelector(".red");
 const yellowElem = document.querySelector(".yellow");
 const greenElem = document.querySelector(".green");
+let isIntervalActive = false;
+let intervalId;
 
-function errorStart() {
+function trafficError() {
     const elem = document.querySelector('.yellow2');
 
-    setInterval(function() {
-        elem.classList.toggle("active");
-    }, 500);
+    if (isIntervalActive) {
+        clearInterval(intervalId);
+        elem.classList.remove("active");
+    } else {
+        intervalId = setInterval(function() {
+            elem.classList.toggle("active");
+        }, 500);
+    }
+    
+    isIntervalActive = !isIntervalActive;
 }
 
 function lightOff() {
@@ -41,5 +50,5 @@ function yellow() {
     setTimeout(red, 1000);
 }
 
-errorStart();
-red();
+trafficError();
+// red();
