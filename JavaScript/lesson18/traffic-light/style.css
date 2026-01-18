@@ -3,6 +3,7 @@
 body {
     background-color: #194383;
     padding-bottom: 200px;
+    direction: rtl;
 }
 
 * {
