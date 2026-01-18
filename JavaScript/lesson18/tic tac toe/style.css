@@ -8,6 +8,7 @@ body {
     direction: rtl;
     padding-bottom: 200px;
     background-color: #333;
+    text-align: center;
 }
 
 * {
@@ -29,4 +30,24 @@ h1 {
     padding: 8px 16px;
     border-radius: 6px;
     text-align: center;
+}
+
+.board {
+    display: inline-grid;
+    grid-template-columns: repeat(3, 1fr);
+    background-color: white;
+}
+
+.board>div {
+    width: 80px;
+    height: 80px;
+    border: 1px solid;
+    font-size: 50px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.board>div:hover {
+    cursor: pointer;
+    background-color: rgb(0, 255, 8);
 }
