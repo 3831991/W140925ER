@@ -96,11 +96,11 @@ p {
 }
 
 .traffic {
-    display: inline-block;
     background-color: black;
     border-radius: 8px;
     box-shadow: 0 0 9px #a1a1a1;
     margin: 30px;
+    padding: 5px;
 }
 
 .traffic>div {
