@@ -51,3 +51,7 @@ h1 {
     cursor: pointer;
     background-color: rgb(0, 255, 8);
 }
+
+.bg {
+    background-color: #ff6a00;
+}
