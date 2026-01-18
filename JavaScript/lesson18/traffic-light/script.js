@@ -51,4 +51,4 @@ function yellow() {
 }
 
 trafficError();
-// red();
+red();
