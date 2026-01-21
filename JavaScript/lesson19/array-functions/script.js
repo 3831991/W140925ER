@@ -1,1 +1,3 @@
-const numbers = [ 9, 9, 5, 9, 6, 1, 8, 1, 3, 2, 6, 7, 8, 1, 8, 5, 3, 6, 1, 9, 5, 2, 1, 4, 8, 1, 1, 5, 5, 4, 3, 8, 9, 5, 8, 5, 10, 4, 9, 4];
+const studentNames = students.slice(0, 20).map(x => `${x.firstName} ${x.lastName}`).join(', ');
+
+document.querySelector(".task1 p").innerHTML = studentNames;
