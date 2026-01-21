@@ -16,7 +16,7 @@ const options = [
 for (let i = 0; i < 9; i++) {
     const div = document.createElement("div");
 
-    div.addEventListener("click", function(ev) {
+    div.addEventListener("click", ev => {
         if (gameOver || ev.target.innerText) {
             return;
         }
