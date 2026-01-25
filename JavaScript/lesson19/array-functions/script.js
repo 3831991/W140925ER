@@ -31,10 +31,18 @@ const colorStudents = students.slice(0, 30).map((x, i) => {
 
 document.querySelector(".task4 p").innerHTML = colorStudents;
 
+// הפעלת אירוע על תיבת החיפוש
+// מסננים את כל האובייקטים ששם הפרטי עונה על מילת החיפוש
+// מציגים את אורך המערך המסונן (כמות התוצאות)
 document.querySelector(".task5 input").addEventListener("input", ev => {
     const search = ev.target.value;
-    const len = students.filter(x => x.firstName.includes(search)).length;
-    document.querySelector(".task5 p").innerHTML = search ? len : '';
+
+    if (search) {
+        const len = students.filter(x => x.firstName.includes(search)).length;
+        document.querySelector(".task5 p").innerHTML = len;
+    } else {
+        document.querySelector(".task5 p").innerHTML = '';
+    }
 });
 
 students.sort((a, b) => {
