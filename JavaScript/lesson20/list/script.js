@@ -19,10 +19,10 @@ function createTask(obj, i) {
     if (obj.checked) {
         li.classList.add("checked");
         input.checked = true;
-    } else {
-        // מאפשר לערוך
-        div.contentEditable = true;
     }
+
+    // מאפשר לערוך
+    div.contentEditable = true;
 
     input.type = "checkbox";
     // כל שינוי בסטטוס המשימה
@@ -35,6 +35,24 @@ function createTask(obj, i) {
     // מעקב אחר שינויים בתוכן המשימה
     div.addEventListener("input", ev => {
         obj.subject = ev.target.innerText;
+    });
+
+    div.addEventListener("keydown", ev => {
+        const { key } = ev;
+
+        if (key == 'ArrowDown') {
+            if (i != tasks.length - 1) {
+                ul.children[i + 1].querySelector('div').focus();
+            }
+        } else if (key == 'ArrowUp') {
+            if (i) {
+                ul.children[i - 1].querySelector('div').focus();
+            }
+        } else if (key == 'Enter') {
+            // אם נמצאים במשימה האחרונה, שזה יוסיף משימה חדשה
+        } else if (key == 'Backspace') {
+            // אם אין תוכן במשימה, שימחק אותה
+        }
     });
 
     // לחצן מחיקה
