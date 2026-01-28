@@ -1,9 +1,11 @@
 const ul = document.querySelector("ul");
-const tasks = [
-    { id: 20, subject: 'לקנות חלב', checked: true },
-    { id: 22, subject: 'להכין קפה', checked: false },
-    { id: 28, subject: 'לתרגל 8 שעות בשבוע', checked: false },
-];
+const tasks = [];
+
+const tasksSaved = localStorage.getItem("tasks");
+
+if (tasksSaved) {
+    tasks.push(...JSON.parse(tasksSaved));
+}
 
 /**
  * יצירת אלמנט ב-HTML
@@ -29,12 +31,14 @@ function createTask(obj) {
     input.addEventListener("change", ev => {
         obj.checked = ev.target.checked;
         li.classList.toggle("checked");
+        saveData();
     });
 
     div.innerHTML = obj.subject;
     // מעקב אחר שינויים בתוכן המשימה
     div.addEventListener("input", ev => {
         obj.subject = ev.target.innerText;
+        saveData();
     });
 
     div.addEventListener("keydown", ev => {
@@ -66,7 +70,7 @@ function createTask(obj) {
         } else if (key == 'Backspace') {
             // אם אין טקסט במשימה - תמחק אותה
             if (div.innerText.trim() == '') {
-                li.remove();
+                removeTask(obj, li);
 
                 // אם זו לא המשימה הראשונה - תעלה למשימה הקודמת
                 if (i > 0) {
@@ -80,8 +84,7 @@ function createTask(obj) {
     remove.innerText = 'X';
     remove.className = "remove";
     remove.addEventListener("click", () => {
-        tasks.splice(i, 1);
-        li.remove();
+        removeTask(obj, li);
     });
 
     li.appendChild(input);
@@ -104,7 +107,26 @@ function newTask() {
 
     tasks.push(obj);
     createTask(obj);
+    saveData();
+}
+
+function removeTask(obj, li) {
+    const i = tasks.findIndex(x => x.id == obj.id);
+    tasks.splice(i, 1);
+    li.remove();
+    saveData();
+}
+
+function saveData() {
+    const tasksSaved = JSON.stringify(tasks);
+    localStorage.setItem("tasks", tasksSaved);
 }
 
 // מפעיל את הפונקציה של הוספת משימה על כל אובייקט במערך
 tasks.forEach(createTask);
+
+if (!tasks.length) {
+    for (let i = 0; i < 3; i++) {
+        newTask();
+    }
+}
