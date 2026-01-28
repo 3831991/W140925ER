@@ -39,21 +39,36 @@ function createTask(obj) {
 
     div.addEventListener("keydown", ev => {
         const { key } = ev;
+        const i = tasks.findIndex(x => x.id == obj.id);
 
         if (key == 'ArrowDown') {
+            // אם לא נמצאים במשימה האחרונה - רד למשימה הבאה
             if (i != tasks.length - 1) {
                 ul.children[i + 1].querySelector('div').focus();
             }
         } else if (key == 'ArrowUp') {
+            // אם לא נמצאים במשימה הראשונה - עלה למשימה הקודמת
             if (i) {
                 ul.children[i - 1].querySelector('div').focus();
             }
         } else if (key == 'Enter') {
-            // אם נמצאים במשימה האחרונה, שזה יוסיף משימה חדשה
+            // אם לחצנו על אנטר - זה מבטל את פעולת ברירת המחדל של האירוע (-שורה חדשה)
+            ev.preventDefault();
+
+            // אם זה המשימה האחרונה - תוסיף
+            if (i == tasks.length - 1) {
+                newTask();
+            }
+            // אחרת - רד למשימה הבאה
+            else {
+                ul.children[i + 1].querySelector('div').focus();
+            }
         } else if (key == 'Backspace') {
+            // אם אין טקסט במשימה - תמחק אותה
             if (div.innerText.trim() == '') {
                 li.remove();
 
+                // אם זו לא המשימה הראשונה - תעלה למשימה הקודמת
                 if (i > 0) {
                     ul.children[i - 1].querySelector('div').focus();
                 }
@@ -74,6 +89,7 @@ function createTask(obj) {
     li.appendChild(remove);
 
     ul.appendChild(li);
+    // לאחר שנוספה המשימה - תשים שם את הסמן
     div.focus();
 }
 
@@ -91,4 +107,4 @@ function newTask() {
 }
 
 // מפעיל את הפונקציה של הוספת משימה על כל אובייקט במערך
-// tasks.forEach(createTask);
+tasks.forEach(createTask);
