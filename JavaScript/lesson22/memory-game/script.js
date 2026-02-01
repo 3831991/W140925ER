@@ -33,8 +33,44 @@ function newGame() {
         divCard.innerHTML = `<i>${c.icon}</i>
                              <p>${c.name}</p>`;
 
+        divCard.addEventListener("click", ev => {
+            if (c.show) {
+                return;
+            }
+
+            const shown = cards.filter(x => x.show);
+
+            if (shown.length <= 1) {
+                c.show = true;
+                ev.target.classList.add('show');
+            } else {
+                return;
+            }
+
+            // const prev = shown[0];
+            const [prev] = shown;
+
+            if (shown.length == 1) {
+
+                if (prev.id == c.id) {
+                    
+                } else {
+                    setTimeout(() => {
+                        c.show = false;
+                        prev.show = false;
+
+                        prev.elem.classList.remove('show');
+                        ev.target.classList.remove('show');
+                    }, 1000);
+                }
+            }
+        });
+
+        c.elem = divCard;
         board.appendChild(divCard);
     });
 }
 
 newGame();
+
+window.addEventListener("mousedown", ev => ev.preventDefault());

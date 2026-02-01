@@ -75,6 +75,7 @@ h1 {
 
 .card * {
     display: none;
+    pointer-events: none;
 }
 
 .card.show {
