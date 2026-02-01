@@ -100,7 +100,7 @@ function newTask() {
     const ids = tasks.map(x => x.id);
 
     const obj = {
-        id: Math.max(...ids) + 1,
+        id: ids.length ? Math.max(...ids) + 1 : 1,
         subject: '',
         checked: false,
     };
