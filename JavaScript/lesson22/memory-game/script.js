@@ -18,3 +18,14 @@ const fruits = [
     { id: 18, name: 'מלון', icon: '🍈' },
 ];
 
+const cards = [];
+
+function newGame() {
+    fruits.forEach(f => {
+        cards.push({ ...f }, { ...f })
+    });
+
+    console.log(cards);
+}
+
+newGame();
