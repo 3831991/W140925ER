@@ -19,6 +19,7 @@ const fruits = [
 
 const board = document.querySelector(".board");
 const cards = [];
+let isFirstPlayer = true;
 
 function newGame() {
     fruits.forEach(f => {
@@ -43,6 +44,9 @@ function newGame() {
             if (shown.length <= 1) {
                 c.show = true;
                 ev.target.classList.add('show');
+
+                const twin = cards.find(x => x.id == c.id && !x.show);
+                twin?.elem.classList.add('cheat');
             } else {
                 return;
             }
@@ -51,24 +55,49 @@ function newGame() {
             const [prev] = shown;
 
             if (shown.length == 1) {
+                document.querySelectorAll(".cheat").forEach(elem => elem.classList.remove("cheat"));
 
-                if (prev.id == c.id) {
-                    
-                } else {
-                    setTimeout(() => {
-                        c.show = false;
-                        prev.show = false;
+                setTimeout(() => {
+                    c.show = false;
+                    prev.show = false;
 
-                        prev.elem.classList.remove('show');
-                        ev.target.classList.remove('show');
-                    }, 1000);
-                }
+                    prev.elem.classList.remove('show');
+                    ev.target.classList.remove('show');
+
+                    if (prev.id == c.id) {
+                        if (isFirstPlayer) {
+                            c.ofPlayer = 1;
+                            prev.ofPlayer = 1;
+                        } else {
+                            c.ofPlayer = 2;
+                            prev.ofPlayer = 2;
+                        }
+
+                        showFruitOfPlayers(c);
+                        prev.elem.classList.add('complete');
+                        ev.target.classList.add('complete');
+                    } else {
+                        isFirstPlayer = !isFirstPlayer;
+                    }
+                }, 1000);
             }
         });
 
         c.elem = divCard;
         board.appendChild(divCard);
     });
+}
+
+function showFruitOfPlayers(fruit) {
+    const div = document.createElement("div");
+    div.className = 'fruit';
+    div.innerHTML = fruit.icon;
+    
+    if (fruit.ofPlayer == 1) {
+        document.querySelector('.player1').appendChild(div);
+    } else if (fruit.ofPlayer == 2) {
+        document.querySelector('.player2').appendChild(div);
+    }
 }
 
 newGame();

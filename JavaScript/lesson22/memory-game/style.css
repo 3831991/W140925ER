@@ -86,3 +86,15 @@ h1 {
 .card.show * {
     display: block;
 }
+
+.card.complete {
+    visibility: hidden;
+}
+
+.card.cheat {
+  filter: brightness(0.94);
+}
+
+.fruit {
+    font-size: 80px;
+}
