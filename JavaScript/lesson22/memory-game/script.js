@@ -4,7 +4,6 @@ const fruits = [
     { id: 3, name: 'תפוז', icon: '🍊' },
     { id: 4, name: 'אבטיח', icon: '🍉' },
     { id: 5, name: 'ענבים', icon: '🍇' },
-    { id: 7, name: 'רימון', icon: '🍎' },
     { id: 8, name: 'תמר', icon: '🌴' },
     { id: 9, name: 'זית', icon: '🫒' },
     { id: 10, name: 'אגס', icon: '🍐' },
@@ -18,14 +17,24 @@ const fruits = [
     { id: 18, name: 'מלון', icon: '🍈' },
 ];
 
+const board = document.querySelector(".board");
 const cards = [];
 
 function newGame() {
     fruits.forEach(f => {
-        cards.push({ ...f }, { ...f })
+        cards.push({ ...f }, { ...f });
     });
 
-    console.log(cards);
+    cards.sort(() => Math.random() - 0.5);
+
+    cards.forEach(c => {
+        const divCard = document.createElement("div");
+        divCard.className = 'card';
+        divCard.innerHTML = `<i>${c.icon}</i>
+                             <p>${c.name}</p>`;
+
+        board.appendChild(divCard);
+    });
 }
 
 newGame();

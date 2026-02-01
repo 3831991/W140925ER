@@ -17,7 +17,7 @@ h1 {
 
 .frame {
     display: grid;
-    grid-template-columns: 100px 1fr 100px;
+    grid-template-columns: 150px 1fr 150px;
     gap: 16px;
     text-align: center;
     padding: 0 16px;
@@ -27,7 +27,7 @@ h1 {
     background-color: white;
     border-radius: 6px;
     min-height: 100%;
-    
+
 }
 
 .frame .player header {
@@ -41,4 +41,47 @@ h1 {
     background-color: white;
     border-radius: 6px;
     min-height: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: space-evenly;
+    padding: 24px 12px;
+}
+
+.card {
+    width: 100px;
+    height: 100px;
+    background: antiquewhite;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.card:hover {
+    scale: 1.1;
+}
+
+.card i {
+    font-size: 40px;
+    font-style: normal;
+}
+
+.card p {
+    margin: 5px;
+}
+
+.card * {
+    display: none;
+}
+
+.card.show {
+    box-shadow: 0 0 5px #60606094;
+    transform: matrix3d(1, 0, 4, 0, 0, 1, 0, 0, 1, 0, 1, 0, 0, 0, 0, 1);
+}
+
+.card.show * {
+    display: block;
 }
