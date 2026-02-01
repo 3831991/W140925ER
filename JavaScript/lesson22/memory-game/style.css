@@ -2,8 +2,7 @@
 
 body {
     direction: rtl;
-    background-color: #484848;
-    padding-bottom: 200px;
+    background-color: #232323;
 }
 
 * {
@@ -17,63 +16,29 @@ h1 {
 }
 
 .frame {
-    width: 80%;
-    max-width: 500px;
-    min-height: 300px;
-    background-color: #f9ffd0c9;
-    margin: auto;
-    padding: 8px 16px;
-    border-radius: 6px;
-}
-
-button {
-    background-color: #673ab7;
-    color: white;
-    padding: 8px 12px;
-    border-radius: 6px;
-    border: none;
-}
-
-button:hover {
-    background-color: #8056c9;
-}
-
-ul {
-    padding: 0;
-    margin: 0;
-    list-style-type: none;
-}
-
-li {
-    border-bottom: 1px solid #585858;
-    padding: 10px 8px;
-    display: flex;
-}
-
-li div {
-    width: 100%;
-    outline: 0;
-}
-
-li.checked div {
-    text-decoration: line-through;
-}
-
-.remove {
-    color: #bf0000;
-    transition: 0.6s;
-    display: block;
-    border-radius: 50%;
-    width: 20px;
-    height: 20px;
+    display: grid;
+    grid-template-columns: 100px 1fr 100px;
+    gap: 16px;
     text-align: center;
-    cursor: pointer;
+    padding: 0 16px;
 }
 
-.remove:hover {
-    scale: 1.5;
-    rotate: 360deg;
-    font-weight: bold;
-    color: white;
-    background-color: #bf0000;
+.frame .player {
+    background-color: white;
+    border-radius: 6px;
+    min-height: 100%;
+    
+}
+
+.frame .player header {
+    background-color: rgb(243, 182, 0);
+    border-radius: 6px 6px 0 0;
+    font-size: 20px;
+    padding: 6px 0;
+}
+
+.frame .board {
+    background-color: white;
+    border-radius: 6px;
+    min-height: 500px;
 }
