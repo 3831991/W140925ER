@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;600;700;900&display=swap');
+
+body {
+    direction: rtl;
+    background-color: #484848;
+}
+
+* {
+    font-family: 'Rubik', sans-serif !important;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    margin: 16px;
+}
+
+.frame {
+    width: 80%;
+    max-width: 900px;
+    min-height: 300px;
+    background-color: #ffffffc9;
+    margin: auto;
+    padding: 16px;
+    border-radius: 6px;
+}
+
+table {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    min-width: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    border-radius: 8px 8px 0 0;
+    overflow: hidden;
+    direction: rtl;
+    /* מותאם לעברית */
+}
+
+table thead tr {
+    background-color: #009879;
+    /* צבע נושא - ניתן לשינוי */
+    color: #ffffff;
+    text-align: right;
+    font-weight: bold;
+}
+
+table th {
+    text-align: center;
+}
+
+table th,
+table td {
+    padding: 12px 15px;
+}
+
+table tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+    /* צבע שורה לסירוגין */
+}
+
+table tbody tr:last-of-type {
+    border-bottom: 2px solid #009879;
+}
+
+table tbody tr:hover {
+    background-color: #f1f1f1;
+    cursor: pointer;
+    transition: 0.2s;
+}

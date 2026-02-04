@@ -1,0 +1,48 @@
+body {
+    margin: 0;
+}
+
+/* הגדרות בסיסיות */
+.simple-nav {
+    background-color: #ffffff;
+    border-bottom: 1px solid #eaeaea;
+    display: flex;
+    justify-content: center;
+    /* מרכוז התפריט */
+    padding: 0;
+    direction: rtl;
+    /* התאמה לעברית */
+    margin-bottom: 24px;
+}
+
+.nav-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav-item {
+    margin: 0;
+}
+
+.nav-link {
+    display: block;
+    padding: 20px 25px;
+    text-decoration: none;
+    color: #555;
+    font-family: sans-serif;
+    font-size: 16px;
+    transition: all 0.2s ease;
+}
+
+/* אפקט מעבר עכבר פשוט */
+.nav-link:hover {
+    color: #000;
+    background-color: #f9f9f9;
+}
+
+.nav-active {
+    background-color: #009879;
+    color: white;
+}
