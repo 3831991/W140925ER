@@ -14,7 +14,7 @@ const setTickets = tickets => {
             <p>${ticket.message}</p>
 
             <footer>
-                ${ticket.phone} | ${ticket.email}
+                ${ticket.phone}<br>${ticket.email}
             </footer>
         `;
 

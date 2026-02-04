@@ -22,61 +22,11 @@ h1 {
     min-height: 300px;
     background-color: #ffffffc9;
     margin: auto;
-    padding: 8px 16px;
+    padding: 16px;
     border-radius: 6px;
-}
-
-.task {
-    border-bottom: 1px solid #c1c1c1;
-    padding-bottom: 12px;
-}
-
-h2 {
-    font-size: 18px;
-    font-weight: normal;
-    padding: 12px 0;
-    margin: 0px;
-}
-
-button {
-    background-color: #673ab7;
-    color: white;
-    padding: 8px 12px;
-    border-radius: 6px;
-    border: none;
-}
-
-button:hover {
-    background-color: #8056c9;
-}
-
-input, select {
-    border: 1px solid;
-    padding: 8px 12px;
-    border-radius: 5px;
-    margin-top: 3px;
-    max-width: 100%;
-    box-sizing: border-box;
-}
-
-.alert {
-    padding: 8px 12px;
-    margin: 0 -16px;
-    text-align: center;
-    border: 1px dashed;
-    border-right: 0;
-    border-left: 0;
-    font-size: 20px;
-    color: gray;
-    margin-bottom: 12px;
-}
-
-.rectangle {
-    height: 30px;
-    width: 60px;
-    display: inline-block;
-    margin: 3px;
-    background-color: #484848;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 12px;
 }
 
 /* עיצוב כללי לכרטיס הפנייה */
@@ -87,7 +37,6 @@ input, select {
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     padding: 20px;
     max-width: 400px;
-    margin: 20px auto;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     border-right: 5px solid #3498db; /* פס קישוט צדדי */
     transition: transform 0.2s ease;
