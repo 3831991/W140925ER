@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;600;700;900&display=swap');
+
+body {
+    direction: rtl;
+    background-color: #484848;
+    padding-bottom: 200px;
+}
+
+* {
+    font-family: 'Rubik', sans-serif !important;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    margin: 16px;
+}
+
+.frame {
+    width: 80%;
+    max-width: 900px;
+    min-height: 300px;
+    background-color: #ffffffc9;
+    margin: auto;
+    padding: 8px 16px;
+    border-radius: 6px;
+}
+
+.task {
+    border-bottom: 1px solid #c1c1c1;
+    padding-bottom: 12px;
+}
+
+h2 {
+    font-size: 18px;
+    font-weight: normal;
+    padding: 12px 0;
+    margin: 0px;
+}
+
+button {
+    background-color: #673ab7;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 6px;
+    border: none;
+}
+
+button:hover {
+    background-color: #8056c9;
+}
+
+input, select {
+    border: 1px solid;
+    padding: 8px 12px;
+    border-radius: 5px;
+    margin-top: 3px;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+.alert {
+    padding: 8px 12px;
+    margin: 0 -16px;
+    text-align: center;
+    border: 1px dashed;
+    border-right: 0;
+    border-left: 0;
+    font-size: 20px;
+    color: gray;
+    margin-bottom: 12px;
+}
+
+.rectangle {
+    height: 30px;
+    width: 60px;
+    display: inline-block;
+    margin: 3px;
+    background-color: #484848;
+}
+
+/* עיצוב כללי לכרטיס הפנייה */
+.ticket {
+    direction: rtl; /* יישור לימין לעברית */
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 400px;
+    margin: 20px auto;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-right: 5px solid #3498db; /* פס קישוט צדדי */
+    transition: transform 0.2s ease;
+}
+
+/* כותרת - שם השולח */
+.ticket header h2 {
+    margin: 0;
+    font-size: 1.4rem;
+    color: #2c3e50;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+}
+
+/* גוף ההודעה */
+.ticket p {
+    color: #555;
+    line-height: 1.6;
+    margin: 15px 0;
+    min-height: 50px;
+}
+
+/* פוטר - פרטי קשר */
+.ticket footer {
+    font-size: 0.85rem;
+    color: #7f8c8d;
+    background: #f9f9f9;
+    padding: 10px;
+    border-radius: 6px;
+    text-align: center;
+    border-top: 1px dashed #ddd;
+}
+
+/* עיצוב למייל ולטלפון בתוך הפוטר */
+.ticket footer {
+    display: block;
+    unicode-bidi: isolate; /* שומר על פורמט המספרים והמייל תקין */
+}
+
+.ticket .date {
+    font-size: 0.75rem;
+    color: #95a5a6;
+    background: #f1f2f6;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-weight: bold;
+}
