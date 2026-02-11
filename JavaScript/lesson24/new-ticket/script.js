@@ -21,7 +21,7 @@ async function addTicket(ev) {
     document.querySelector(".form-container").remove();
 
     const p = document.createElement("p");
-    p.innerHTML = "פנייתך נשלחה בהצלחה..";
+    p.innerHTML = `${ticket.fullName}, פנייתך נשלחה בהצלחה..`;
     p.className = "alert";
     document.body.appendChild(p);
 }
