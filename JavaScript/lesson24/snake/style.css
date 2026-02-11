@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;600;700;900&display=swap');
+
+html {
+    min-height: 100%;
+}
+
+body {
+    direction: rtl;
+    background-color: #383838;
+    padding-bottom: 200px;
+}
+
+* {
+    font-family: 'Rubik', sans-serif !important;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    margin: 16px;
+}
+
+.frame {
+    width: 80%;
+    max-width: 900px;
+    min-height: 300px;
+    background-color: #ffffff00;
+    margin: auto;
+    padding: 8px 16px;
+    border-radius: 6px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 18px;
+    font-weight: bold;
+    padding: 12px 0;
+    margin: 0px;
+}
+
+button {
+    background-color: #8bc34a;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 6px;
+    border: none;
+}
+
+button:hover {
+    background-color: #a4d967;
+}
+
+.board {
+    display: inline-grid;
+    border-radius: 3px;
+    border: 4px solid;
+    overflow: hidden;
+    background-color: #464646;
+}
+
+.board div {
+    width: 10px;
+    height: 10px;
+}
+
+.active {
+    background-image: radial-gradient(#212121 20%, transparent 20%),
+    radial-gradient(#fafafa 20%, transparent 20%);
+    background-color: #44e535;
+    background-position: 0 0, 50px 50px;
+    background-size: 9px 9px;
+}
+
+.head.up {
+    border-radius: 12px 12px 0 0;
+}
+
+.head.right {
+    border-radius: 0 12px 12px 0;
+}
+
+.head.down {
+    border-radius: 0 0 12px 12px;
+}
+
+.head.left {
+    border-radius: 12px 0 0 12px;
+}
+
+.topLeftRadius {
+    border-radius: 12px 0 0 0;
+}
+
+.topRightRadius {
+    border-radius: 0 12px 0 0;
+}
+
+.bottomRightRadius {
+    border-radius: 0 0 12px 0;
+}
+
+.bottomLeftRadius {
+    border-radius: 0 0 0 12px;
+}
+
+.apple::after {
+    content: "🍎";
+    position: relative;
+    top: -7px;
+    right: -3px;
+    font-size: 11px;
+}
