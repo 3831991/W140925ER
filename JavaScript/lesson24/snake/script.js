@@ -16,10 +16,10 @@ for (let i = 0; i < width * height; i++) {
     divs.push(div);
 }
 
+drawSnake();
+
 function drawSnake() {
     snake.forEach(num => {
         divs[num].classList.add('snake');
     });
 }
-
-drawSnake();
