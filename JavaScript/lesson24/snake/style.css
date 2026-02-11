@@ -63,7 +63,7 @@ button:hover {
     height: 10px;
 }
 
-.active {
+.snake {
     background-image: radial-gradient(#212121 20%, transparent 20%),
     radial-gradient(#fafafa 20%, transparent 20%);
     background-color: #44e535;
