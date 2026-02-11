@@ -43,6 +43,6 @@ body {
 }
 
 .nav-active {
-    background-color: #009879;
-    color: white;
+    background-color: #009879 !important;
+    color: white !important;
 }
