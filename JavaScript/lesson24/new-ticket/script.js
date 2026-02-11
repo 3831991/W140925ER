@@ -17,5 +17,11 @@ async function addTicket(ev) {
     });
 
     const ticket = await res.json();
-    console.log(ticket);
+
+    document.querySelector(".form-container").remove();
+
+    const p = document.createElement("p");
+    p.innerHTML = "פנייתך נשלחה בהצלחה..";
+    p.className = "alert";
+    document.body.appendChild(p);
 }

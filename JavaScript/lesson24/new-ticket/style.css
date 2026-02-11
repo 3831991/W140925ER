@@ -115,3 +115,11 @@ button:active {
         padding: 25px;
     }
 }
+
+.alert {
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-size: 2em;
+    margin: 30px 0;
+}
