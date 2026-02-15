@@ -38,6 +38,13 @@ function winner(player, arr) {
     const divs = board.querySelectorAll("div");
     arr.forEach(n => divs[n].classList.add('bg'));
     gameOver = true;
+
+    confetti({
+        count: 300,			// Number of particles
+        size: 3,			// Size of the particles
+        velocity: 300,		// Initial particle velocity
+        fade: false			// Particles fall off the screen, or fade out
+    });
 }
 
 function check() {
