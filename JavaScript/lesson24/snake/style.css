@@ -6,8 +6,7 @@ html {
 
 body {
     direction: rtl;
-    background-color: #383838;
-    padding-bottom: 200px;
+    background-color: hsl(0, 0%, 22%);
 }
 
 * {
@@ -61,6 +60,8 @@ button:hover {
 .board div {
     width: 10px;
     height: 10px;
+    /* font-size: 5px;
+    color: white; */
 }
 
 .snake {
@@ -103,7 +104,7 @@ button:hover {
     border-radius: 0 0 0 12px;
 }
 
-.apple::after {
+.bait::after {
     content: "🍎";
     position: relative;
     top: -7px;
