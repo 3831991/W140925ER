@@ -45,10 +45,6 @@ button {
     border: none;
 }
 
-button:hover {
-    background-color: #a4d967;
-}
-
 .board {
     display: inline-grid;
     border-radius: 3px;
@@ -66,7 +62,7 @@ button:hover {
 
 .snake {
     background-image: radial-gradient(#212121 20%, transparent 20%),
-    radial-gradient(#fafafa 20%, transparent 20%);
+        radial-gradient(#fafafa 20%, transparent 20%);
     background-color: #44e535;
     background-position: 0 0, 50px 50px;
     background-size: 9px 9px;
@@ -110,4 +106,95 @@ button:hover {
     top: -7px;
     right: -3px;
     font-size: 11px;
+}
+
+.score {
+    text-align: center;
+    font-size: 1.5em;
+    color: white;
+    text-shadow: 0 0 5px black;
+    margin-top: 6px;
+}
+
+/* עיצוב כללי לדיאלוג */
+dialog {
+    border: none;
+    border-radius: 12px;
+    padding: 0;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    max-width: 400px;
+    animation: fadeIn 0.3s ease-out;
+}
+
+dialog::backdrop {
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(4px);
+    /* טשטוש הרקע מאחור */
+}
+
+.dialog-content {
+    padding: 24px;
+    text-align: center;
+    direction: rtl;
+    /* תמיכה בעברית */
+}
+
+h3 {
+    margin-top: 0;
+    color: #333;
+}
+
+p {
+    color: #666;
+    line-height: 1.5;
+}
+
+/* כפתורים */
+.actions {
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+    margin-top: 24px;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: opacity 0.2s;
+}
+
+.btn-secondary {
+    background: #1bcd04;
+    color: white;
+}
+
+.btn-danger {
+    background: #ff4d4d;
+    color: white;
+}
+
+.btn-success {
+    background: #e0e0e0;
+    color: #333;
+}
+
+button:hover {
+    opacity: 0.85;
+}
+
+/* אנימציית כניסה */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }

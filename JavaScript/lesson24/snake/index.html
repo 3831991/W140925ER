@@ -14,6 +14,20 @@
 
     <div class="frame">
         <div class="board"></div>
+
+        <div class="score"></div>
+
+        <dialog id="confirmDialog">
+            <div class="dialog-content">
+                <h3>אוי... באסה... נפסלת...</h3>
+                <p>מה לעשות עכשיו?</p>
+                <div class="actions">
+                    <button id="newGame" class="btn-secondary" onclick="newGame()">משחק חדש</button>
+                    <button id="cancelBtn" class="btn-danger" onclick="closeModal()">כלום</button>
+                    <button id="confirmBtn" class="btn-success" onclick="turnHead()">הפוך את הנחש</button>
+                </div>
+            </div>
+        </dialog>
     </div>
 </body>
 

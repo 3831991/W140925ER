@@ -6,6 +6,7 @@ let isGameOver;
 let interval;
 let bait;
 
+const dialog = document.getElementById('confirmDialog');
 const snake = new Array(length).fill().map((x, i) => i);
 snake.reverse();
 
@@ -21,6 +22,7 @@ for (let i = 0; i < width * height; i++) {
 }
 
 drawSnake();
+setBait();
 
 function drawSnake() {
     // ניקוי כל הקלאסים - לפני שמוסיפים קלאסים מעודכנים
@@ -50,6 +52,7 @@ function drawSnake() {
     // מגדירים קלאס לראש הנחש
     const head = snake[0];
     divs[head].classList.add('head', direction);
+    showScore();
 }
 
 function move(dir) {
@@ -113,26 +116,46 @@ function move(dir) {
 
     direction = dir;
     snake.unshift(head);
-    snake.pop();
+
+    if (head == bait) {
+        sound('sound.mp3');
+        setBait();
+    } else {
+        snake.pop();
+    }
+
     drawSnake();
 
     clearInterval(interval);
-    interval = setInterval(() => move(direction), 200);
+    interval = setInterval(() => move(direction), 180);
 }
 
 function gameOver() {
+    sound('gameover.mp3');
     isGameOver = true;
     clearInterval(interval);
-    alert("איזה באסה 😥");
+    dialog.showModal();
 }
 
 function setBait() {
+    divs[bait]?.classList.remove('bait');
+
     do {
         bait = Math.floor(Math.random() * width * height);
     } while (snake.includes(bait))
 
-    divs.forEach(div => div.classList.remove('bait'));
     divs[bait].classList.add('bait');
+}
+
+function showScore() {
+    document.querySelector(".score").innerHTML = `${(snake.length - length) * 10} נקודות`;
+}
+
+function sound(fileName) {
+    const audio = document.createElement("audio");
+    audio.volume = 0.5;
+    audio.src = fileName;
+    audio.play();
 }
 
 window.addEventListener("keydown", ev => {
@@ -146,3 +169,18 @@ window.addEventListener("keydown", ev => {
         case 'Escape': clearInterval(interval); break;
     }
 });
+
+function closeModal() {
+    dialog.close();
+}
+
+function newGame() {
+    location.reload();
+}
+
+function turnHead() {
+    snake.reverse();
+    isGameOver = false;
+    drawSnake();
+    closeModal();
+}
